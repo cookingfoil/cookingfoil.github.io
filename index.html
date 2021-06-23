@@ -11,6 +11,24 @@ https://github.com/mavroudisv/plain-academic
 - Hynix
 - review: CHI 18, CHI PLAY 19, CHI 20 LBW -->
 
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
 
 <html lang="en">
 <head>
@@ -76,13 +94,28 @@ https://github.com/mavroudisv/plain-academic
 
           <div style="margin-top:3%; text-align:justify;">
             <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>News &#10024;</b></div>
+            
             <!-- &#10022; <b>Mar 2020</b> A remote presentation video of 'An Intermittent Click Planning Model' is published on the <a href="https://dl.acm.org/doi/10.1145/3313831.3376725">ACM Digital Library</a> and the <a href="https://www.youtube.com/watch?v=6Eg8PBjEYrw">SIGCHI Youtube channel</a> <br> -->
+            
+            <style>
+                #more {display: none;}
+            </style>
+              
+            &#10022; <b>Jun 2021</b> Got a research Subsidy fund for Ph.D. Candidates from NRF (National Research Foundation of Korea) <br>
             &#10022; <b>Mar 2021</b> 'Secrets of Gosu: Understanding Physical Combat Skills of Professional Players in First-Person Shooters' paper received an <b>Honourable Mention Award</b> at CHI2021 ! <br>
             &#10022; <b>Dec 2020</b> 'Secrets of Gosu: Understanding Physical Combat Skills of Professional Players in First-Person Shooters' paper has been accepted at CHI2021 <br>
             &#10022; <b>Mar 2020</b> 'An Intermittent Click Planning Model' paper received an <b>Honourable Mention Award</b> at CHI2020 ! <br>
+              
+            <span id="dots">...</span><span id="more">
+
             &#10022; <b>Feb 2020</b>  Visited New York for joint research with NYXL (New York Excelsior), the best Overwatch team in the world <br>
+
             &#10022; <b>Dec 2019</b> 'An Intermittent Click Planning Model' paper has been accepted at CHI2020<br>
+            
             &#10022; <b>Oct 2019</b>  Got a Kimyounghan Global Leader Scholarship <br>
+            </span></p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+            
             <br>
             <br>
             <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>About me</b></div>
@@ -186,7 +219,7 @@ https://github.com/mavroudisv/plain-academic
 
               <p>
                 <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>Honors and Awards</b></div>
-              2021  <b>Research Subsidies for Ph.D. Candidates </b>, NRF (National Research Foundation of Korea)
+              2021  <b>Research Subsidies for Ph.D. Candidates </b>, NRF (National Research Foundation of Korea)<br>
               2021  <b>Best Paper Honorable Mention Award </b>, ACM CHI 2021<br>  
               2020  <b>Best Paper Honorable Mention Award </b>, ACM CHI 2020<br>
               2019  <b>Kimyounghan Global Leader Scholarship</b><br>
@@ -196,7 +229,7 @@ https://github.com/mavroudisv/plain-academic
               <!-- 2014  <b>KAIST Educational UCC Competition</b> - Gold Prize<br> -->
 
               <br>
-
+                  
               <p>
               <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>Services</b></div>
               <p><b><i>&#8226; <u>Organizing</u></b></i><br></p>
